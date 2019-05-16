@@ -43,6 +43,13 @@ export class child {
                 callback: this.updateCar,
                 requireToken: true,
             },
+            {
+                route: '/delete-car/id/:id',
+                method: 'DELETE',
+                callback: this.deleteCar,
+                requireToken: true,
+            }
+
         ]];
     }
 
