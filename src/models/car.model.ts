@@ -36,7 +36,13 @@ export class child {
                 method: 'POST',
                 callback: this.createCar,
                 requireToken: true,
-            }
+            },
+            {
+                route: '/update-car/id/:id',
+                method: 'PUT',
+                callback: this.updateCar,
+                requireToken: true,
+            },
         ]];
     }
 
